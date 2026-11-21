@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Juan José Rubio Iglesias"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Cambia entre extender todos los monitores o usar solo uno, conservando la disposición (X11 y Wayland)",
+        "EnabledByDefault": true,
+        "Icon": "video-display",
+        "Id": "org.kdescreenmanager.applet",
+        "License": "GPL-3.0-or-later",
+        "Name": "KDEScreenManager",
+        "Version": "0.1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-NotificationArea": "true",
+    "X-Plasma-NotificationAreaCategory": "Hardware"
+}

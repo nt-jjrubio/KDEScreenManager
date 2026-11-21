@@ -1,0 +1,15 @@
+Package: kdescreenmanager
+Version: @VERSION@
+Architecture: all
+Maintainer: @MAINTAINER@
+Installed-Size: @SIZE@
+Depends: python3, libkscreen-bin
+Suggests: plasma-workspace (>= 6.0)
+Section: kde
+Priority: optional
+Description: Plasmoid de bandeja para extender o elegir un solo monitor
+ KDEScreenManager añade un icono a la bandeja del sistema de KDE Plasma 6
+ desde el que se puede extender el escritorio a todos los monitores o usar
+ solo uno de ellos, conservando la alineación, la resolución, la frecuencia
+ y la rotación de cada monitor (y la escala en Wayland). Funciona en
+ sesiones Plasma X11 y Wayland.

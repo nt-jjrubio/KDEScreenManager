@@ -1,0 +1,20 @@
+#!/bin/sh
+# Avisos tras instalar KDEScreenManager. Nunca hace fallar la instalación.
+set +e
+
+warn() { echo "KDEScreenManager: AVISO: $*" >&2; }
+
+case "$1" in
+    configure)
+        plasma_ver=$(dpkg-query -W -f='${Version}' plasma-workspace 2>/dev/null)
+        if [ -z "$plasma_ver" ] && ! command -v plasmashell >/dev/null 2>&1; then
+            warn "no se ha detectado KDE Plasma; el widget solo funciona en Plasma 6."
+        elif [ -n "$plasma_ver" ] && dpkg --compare-versions "$plasma_ver" lt 6; then
+            warn "Plasma $plasma_ver es demasiado antiguo; hace falta Plasma 6."
+        fi
+
+        echo "KDEScreenManager instalado. Para mostrarlo: Bandeja del sistema → Configurar → Elementos → KDEScreenManager → Mostrar siempre."
+        echo "Si no aparece, reinicia Plasma (plasmashell --replace &) o cierra sesión."
+        ;;
+esac
+exit 0

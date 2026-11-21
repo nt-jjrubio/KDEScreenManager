@@ -1,0 +1,10 @@
+build/
+*.deb
+__pycache__/
+*.pyc
+antes.json
+despues.json
+.vscode/
+*.swp
+PLAN.md
+
