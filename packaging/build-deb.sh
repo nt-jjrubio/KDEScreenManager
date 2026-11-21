@@ -30,6 +30,7 @@ find "$DEST" -type f -exec chmod 644 {} +
 chmod 755 "$DEST/contents/code/kdescreenmanager-helper.py"
 cp "$ROOT/CHANGELOG.md" "$STAGE/usr/share/doc/kdescreenmanager/"
 [ -f "$ROOT/README.md" ] && cp "$ROOT/README.md" "$STAGE/usr/share/doc/kdescreenmanager/"
+cp "$ROOT/packaging/copyright" "$STAGE/usr/share/doc/kdescreenmanager/copyright"
 chmod 644 "$STAGE"/usr/share/doc/kdescreenmanager/*
 
 SIZE=$(du -sk "$STAGE/usr" | cut -f1)

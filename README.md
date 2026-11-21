@@ -9,6 +9,8 @@ Al cambiar de modo se conservan la **alineación**, la **resolución**, la **fre
 
 > Funciona en sesiones **Plasma (Wayland)** y **Plasma (X11)**.
 
+> **Proyecto independiente.** KDEScreenManager no es un proyecto oficial de KDE ni está afiliado a KDE e.V. Usa [KScreen](https://invent.kde.org/plasma/kscreen) (`kscreen-doctor`), el gestor de pantallas de KDE Plasma, para aplicar los cambios. KDE y Plasma son marcas registradas de KDE e.V.
+
 ## Requisitos
 - KDE Plasma 6 (sesión Wayland o X11).
 - `kscreen-doctor` (paquete `libkscreen-bin`) y `python3`.
@@ -62,3 +64,8 @@ La versión está en `package/metadata.json`. Para publicar una:
 4. Ejecuta `./packaging/build-deb.sh`.
 
 Los paquetes construidos con cambios sin confirmar llevan el sufijo `+git<hash>` en la versión.
+
+## Licencia
+KDEScreenManager es software libre: puedes redistribuirlo y modificarlo según los términos de la **GNU General Public License**, versión 3 o (a tu elección) cualquier versión posterior (`GPL-3.0-or-later`).
+
+Se distribuye con la esperanza de que sea útil, pero **sin ninguna garantía**. Consulta el texto completo en [`LICENSE`](LICENSE).

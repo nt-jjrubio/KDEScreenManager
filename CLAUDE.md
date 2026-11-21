@@ -13,6 +13,7 @@ El diseño completo está en `PLAN.md`. Los cambios de cada versión, en `CHANGE
 - `packaging/`: `build-deb.sh`, `control.in` y `postinst`.
 - `tests/`: `test_helper.py` y `fixtures/three-monitors.json` (salida real de `kscreen-doctor -j`).
 - `dev-install.sh`: instalación local con `kpackagetool6` (solo desarrollo).
+- `LICENSE`: GPL-3.0-or-later (texto completo). `packaging/copyright` es el resumen que se instala con el `.deb`.
 
 ## Comandos
 ```sh
