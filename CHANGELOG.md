@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Sin publicar]
+
+## [0.1.1] - 2026-11-21
 - Archivo `LICENSE` con el texto completo de la GPL-3.0 y archivo `copyright` en el paquete `.deb`.
 - README: sección de licencia y aviso de proyecto independiente (no oficial de KDE).
 

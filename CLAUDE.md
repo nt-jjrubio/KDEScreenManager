@@ -69,4 +69,4 @@ plasmawindowed org.kdescreenmanager.applet                 # probar el widget en
    ```
    En las notas van las novedades del CHANGELOG y las instrucciones de instalación.
 
-Versiones publicadas: `v0.1.0` (2026-11-21).
+Versiones publicadas: `v0.1.0` y `v0.1.1` (2026-11-21).
